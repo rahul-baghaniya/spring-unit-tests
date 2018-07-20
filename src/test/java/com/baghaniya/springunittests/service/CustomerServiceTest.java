@@ -30,11 +30,6 @@ public class CustomerServiceTest {
     private CustomerRepository customerRepository;
 
 
-    @Before
-    public void setup(){
-        MockitoAnnotations.initMocks(this);
-    }
-
     @Test
     public void testGetCustomer() throws Exception{
         Customer returned = new Customer(1L, "rahul");
